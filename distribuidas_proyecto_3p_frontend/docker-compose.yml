@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - '80:80'
+    env_file:
+      - .env # Carga las variables del archivo .env
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

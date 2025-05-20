@@ -1,0 +1,18 @@
+[
+  {
+    "Id": 1,
+    "Sku": "PROD-001",
+    "Name": "Laptop Gamer",
+    "Description": "Laptop de alto rendimiento para gaming y edición.",
+    "Price": 1500.99,
+    "Stock": 10
+  },
+  {
+    "Id": 2,
+    "Sku": "PROD-002",
+    "Name": "Smartphone Pro",
+    "Description": "Teléfono inteligente con cámara de alta resolución.",
+    "Price": 999.99,
+    "Stock": 25
+  }
+]

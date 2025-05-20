@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-700) var(--color-gray-400);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-300) transparent;
+}
