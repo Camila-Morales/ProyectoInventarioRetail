@@ -12,6 +12,8 @@ import { Users } from './admin/pages/Users'
 import { Products } from './store/pages/Products'
 import { AddUser } from './admin/pages/AddUser'
 import { AddProduct } from './store/pages/AddProduct'
+import { ReporteVentas } from './shared/components/ReporteVentas'
+import { RegisterSalePage } from './admin/pages/RegisterSalePage'
 
 function App() {
   return (
@@ -30,7 +32,10 @@ function App() {
           <Route element={<ProtectedRoute allowedRoles={[UserRole.STORE]} />}>
             <Route path="/products" element={<Products />} />
             <Route path="/products/add" element={<AddProduct />} />
+            <Route path="/ventas/nueva" element={<RegisterSalePage />} />
+            <Route path="/ventas/reporte" element={<ReporteVentas />} />
           </Route>
+
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

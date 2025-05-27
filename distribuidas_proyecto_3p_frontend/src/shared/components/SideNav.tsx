@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router'
 import PageLoco from '../../assets/img/PageLogo.png'
 import { FiLogIn } from 'react-icons/fi'
 import { UserRole } from '../../admin/enums/user.enum'
-import { MdLogout, MdOutlineLocalGroceryStore, MdOutlineStore } from 'react-icons/md'
+import { MdOutlineLocalGroceryStore, MdOutlineStore, MdPointOfSale, MdBarChart, MdLogout } from 'react-icons/md'
 import { useAuth } from '../../auth/hooks/useAuth'
 import { AiOutlineDashboard } from 'react-icons/ai'
 
@@ -36,6 +36,16 @@ const links = {
       href: '/products',
       icon: MdOutlineLocalGroceryStore,
       text: 'Products',
+    },
+    {
+      href: '/ventas/nueva',
+      icon: MdPointOfSale,
+      text: 'Registrar Venta',
+    },
+    {
+      href: '/ventas/reporte',
+      icon: MdBarChart,
+      text: 'Reporte de Ventas',
     },
   ],
 }

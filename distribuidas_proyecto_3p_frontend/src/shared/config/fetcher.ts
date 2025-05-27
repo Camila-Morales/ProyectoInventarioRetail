@@ -20,3 +20,11 @@ export const productsApi = axios.create({
     'Content-Type': 'application/json',
   },
 })
+
+
+export const ventasApi = axios.create({
+  baseURL: (import.meta.env.VITE_VENTAS_API as string | undefined) ?? 'http://localhost:8002/api',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+})

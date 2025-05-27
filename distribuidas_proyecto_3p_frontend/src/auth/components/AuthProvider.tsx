@@ -4,7 +4,7 @@ import { AuthUser } from '../types/auth'
 import { getToken, login as loginService } from '../services/auth.service'
 import { useNavigate } from 'react-router'
 import { setApiAuthToken } from '../../shared/utils/fetcher.util'
-import { productsApi, usersApi } from '../../shared/config/fetcher'
+import { productsApi, usersApi,ventasApi } from '../../shared/config/fetcher'
 import {
   getSavedAuthUser,
   getSavedToken,
@@ -28,6 +28,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
   useEffect(() => {
     setApiAuthToken(usersApi, token)
     setApiAuthToken(productsApi, token)
+    setApiAuthToken(ventasApi, token)
   }, [token])
 
   useEffect(() => {
